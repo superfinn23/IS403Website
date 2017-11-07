@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://localhost:3000/www.youtube.com -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <link rel="shortcut icon" href="http://localhost:3000/favicon.ico">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style type="text/css">body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+</style><style type="text/css">.App {
+  text-align: center;
+}
+
+.App-logo {
+  -webkit-animation: App-logo-spin infinite 20s linear;
+          animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@-webkit-keyframes App-logo-spin {
+  from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@keyframes App-logo-spin {
+  from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+</style><style type="text/css" data-jss="" data-meta="MuiPaper">
+.MuiPaper-root-8 {
+  background-color: #fff;
+}
+.MuiPaper-rounded-9 {
+  border-radius: 2px;
+}
+.MuiPaper-shadow0-10 {
+  box-shadow: none;
+}
+.MuiPaper-shadow1-11 {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),0px 1px 1px 0px rgba(0, 0, 0, 0.14),0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow2-12 {
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),0px 2px 2px 0px rgba(0, 0, 0, 0.14),0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow3-13 {
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2),0px 3px 4px 0px rgba(0, 0, 0, 0.14),0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow4-14 {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),0px 4px 5px 0px rgba(0, 0, 0, 0.14),0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow5-15 {
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),0px 5px 8px 0px rgba(0, 0, 0, 0.14),0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow6-16 {
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),0px 6px 10px 0px rgba(0, 0, 0, 0.14),0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow7-17 {
+  box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.2),0px 7px 10px 1px rgba(0, 0, 0, 0.14),0px 2px 16px 1px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow8-18 {
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),0px 8px 10px 1px rgba(0, 0, 0, 0.14),0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow9-19 {
+  box-shadow: 0px 5px 6px -3px rgba(0, 0, 0, 0.2),0px 9px 12px 1px rgba(0, 0, 0, 0.14),0px 3px 16px 2px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow10-20 {
+  box-shadow: 0px 6px 6px -3px rgba(0, 0, 0, 0.2),0px 10px 14px 1px rgba(0, 0, 0, 0.14),0px 4px 18px 3px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow11-21 {
+  box-shadow: 0px 6px 7px -4px rgba(0, 0, 0, 0.2),0px 11px 15px 1px rgba(0, 0, 0, 0.14),0px 4px 20px 3px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow12-22 {
+  box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2),0px 12px 17px 2px rgba(0, 0, 0, 0.14),0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow13-23 {
+  box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2),0px 13px 19px 2px rgba(0, 0, 0, 0.14),0px 5px 24px 4px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow14-24 {
+  box-shadow: 0px 7px 9px -4px rgba(0, 0, 0, 0.2),0px 14px 21px 2px rgba(0, 0, 0, 0.14),0px 5px 26px 4px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow15-25 {
+  box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.2),0px 15px 22px 2px rgba(0, 0, 0, 0.14),0px 6px 28px 5px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow16-26 {
+  box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2),0px 16px 24px 2px rgba(0, 0, 0, 0.14),0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow17-27 {
+  box-shadow: 0px 8px 11px -5px rgba(0, 0, 0, 0.2),0px 17px 26px 2px rgba(0, 0, 0, 0.14),0px 6px 32px 5px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow18-28 {
+  box-shadow: 0px 9px 11px -5px rgba(0, 0, 0, 0.2),0px 18px 28px 2px rgba(0, 0, 0, 0.14),0px 7px 34px 6px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow19-29 {
+  box-shadow: 0px 9px 12px -6px rgba(0, 0, 0, 0.2),0px 19px 29px 2px rgba(0, 0, 0, 0.14),0px 7px 36px 6px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow20-30 {
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2),0px 20px 31px 3px rgba(0, 0, 0, 0.14),0px 8px 38px 7px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow21-31 {
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2),0px 21px 33px 3px rgba(0, 0, 0, 0.14),0px 8px 40px 7px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow22-32 {
+  box-shadow: 0px 10px 14px -6px rgba(0, 0, 0, 0.2),0px 22px 35px 3px rgba(0, 0, 0, 0.14),0px 8px 42px 7px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow23-33 {
+  box-shadow: 0px 11px 14px -7px rgba(0, 0, 0, 0.2),0px 23px 36px 3px rgba(0, 0, 0, 0.14),0px 9px 44px 8px rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-shadow24-34 {
+  box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),0px 24px 38px 3px rgba(0, 0, 0, 0.14),0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+}
+</style><style type="text/css" data-jss="" data-meta="MuiAppBar">
+.MuiAppBar-root-1 {
+  width: 100%;
+  display: flex;
+  z-index: 1100;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.MuiAppBar-positionFixed-2 {
+  top: 0;
+  left: auto;
+  right: 0;
+  position: fixed;
+}
+.MuiAppBar-positionAbsolute-3 {
+  top: 0;
+  left: auto;
+  right: 0;
+  position: absolute;
+}
+.MuiAppBar-positionStatic-4 {
+  position: static;
+  flex-shrink: 0;
+}
+.MuiAppBar-colorDefault-5 {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #f5f5f5;
+}
+.MuiAppBar-colorPrimary-6 {
+  color: rgba(255, 255, 255, 1);
+  background-color: #3f51b5;
+}
+.MuiAppBar-colorAccent-7 {
+  color: rgba(255, 255, 255, 1);
+  background-color: #ff4081;
+}
+</style><style type="text/css" data-jss="" data-meta="MuiTouchRipple">
+.MuiTouchRipple-root-77 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  position: absolute;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.MuiTouchRipple-wrapper-78 {
+  opacity: 1;
+}
+.MuiTouchRipple-wrapperLeaving-79 {
+  opacity: 0;
+  animation: mui-ripple-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiTouchRipple-wrapperPulsating-80 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  animation: mui-ripple-pulsate 1500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+}
+@-webkit-keyframes mui-ripple-enter {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes mui-ripple-exit {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes mui-ripple-pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.MuiTouchRipple-ripple-81 {
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  position: absolute;
+  background: currentColor;
+  border-radius: 50%;
+}
+.MuiTouchRipple-rippleVisible-82 {
+  opacity: 0.3;
+  transform: scale(1);
+  animation: mui-ripple-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiTouchRipple-rippleFast-83 {
+  animation-duration: 200ms;
+}
+</style><style type="text/css" data-jss="" data-meta="MuiButtonBase">
+.MuiButtonBase-root-75 {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  display: inline-flex;
+  outline: none;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  text-decoration: none;
+  justify-content: center;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.MuiButtonBase-disabled-76 {
+  cursor: default;
+  pointer-events: none;
+}
+</style><style type="text/css" data-jss="" data-meta="MuiToolbar">
+.MuiToolbar-root-35 {
+  display: flex;
+  position: relative;
+  min-height: 56px;
+  align-items: center;
+}
+@media (min-width:0px) and (orientation: landscape) {
+  .MuiToolbar-root-35 {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .MuiToolbar-root-35 {
+    min-height: 64px;
+  }
+}
+.MuiToolbar-gutters-36 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width:600px) {
+  .MuiToolbar-gutters-36 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+</style><style type="text/css" data-jss="" data-meta="MuiTypography">
+.MuiTypography-root-37 {
+  margin: 0;
+  display: block;
+}
+.MuiTypography-display4-38 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 7rem;
+  font-weight: 300;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.14286em;
+  margin-left: -.06em;
+  letter-spacing: -.04em;
+}
+.MuiTypography-display3-39 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.30357em;
+  margin-left: -.04em;
+  letter-spacing: -.02em;
+}
+.MuiTypography-display2-40 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 2.8125rem;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.06667em;
+  margin-left: -.04em;
+}
+.MuiTypography-display1-41 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 2.125rem;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.20588em;
+  margin-left: -.04em;
+}
+.MuiTypography-headline-42 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.35417em;
+}
+.MuiTypography-title-43 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.3125rem;
+  font-weight: 500;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.16667em;
+}
+.MuiTypography-subheading-44 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5em;
+}
+.MuiTypography-body2-45 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.71429em;
+}
+.MuiTypography-body1-46 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.46429em;
+}
+.MuiTypography-caption-47 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.375em;
+}
+.MuiTypography-button-48 {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+.MuiTypography-alignLeft-49 {
+  text-align: left;
+}
+.MuiTypography-alignCenter-50 {
+  text-align: center;
+}
+.MuiTypography-alignRight-51 {
+  text-align: right;
+}
+.MuiTypography-alignJustify-52 {
+  text-align: justify;
+}
+.MuiTypography-noWrap-53 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.MuiTypography-gutterBottom-54 {
+  margin-bottom: 0.35em;
+}
+.MuiTypography-paragraph-55 {
+  margin-bottom: 16px;
+}
+.MuiTypography-colorInherit-56 {
+  color: inherit;
+}
+.MuiTypography-colorPrimary-57 {
+  color: #3f51b5;
+}
+.MuiTypography-colorSecondary-58 {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiTypography-colorAccent-59 {
+  color: #f50057;
+}
+.MuiTypography-colorError-60 {
+  color: #ff1744;
+}
+</style><style type="text/css" data-jss="" data-meta="MuiButton">
+.MuiButton-root-61 {
+  color: rgba(0, 0, 0, 0.87);
+  padding: 11px 16px;
+  min-width: 88px;
+  font-size: 14px;
+  box-sizing: border-box;
+  min-height: 36px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  line-height: 1em;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+.MuiButton-root-61:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+@media (hover: none) {
+  .MuiButton-root-61:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-root-61:hover.MuiButton-disabled-73 {
+  background-color: transparent;
+}
+.MuiButton-dense-62 {
+  padding: 10px 8px;
+  min-width: 64px;
+  font-size: 13px;
+  min-height: 32px;
+}
+.MuiButton-label-63 {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.MuiButton-flatPrimary-64 {
+  color: #3f51b5;
+}
+.MuiButton-flatPrimary-64:hover {
+  background-color: rgba(63, 81, 181, 0.12);
+}
+@media (hover: none) {
+  .MuiButton-flatPrimary-64:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-flatAccent-65 {
+  color: #ff4081;
+}
+.MuiButton-flatAccent-65:hover {
+  background-color: rgba(255, 64, 129, 0.12);
+}
+@media (hover: none) {
+  .MuiButton-flatAccent-65:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-flatContrast-66 {
+  color: rgba(255, 255, 255, 1);
+}
+.MuiButton-flatContrast-66:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+@media (hover: none) {
+  .MuiButton-flatContrast-66:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-colorInherit-67 {
+  color: inherit;
+}
+.MuiButton-raised-68 {
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),0px 2px 2px 0px rgba(0, 0, 0, 0.14),0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  background-color: #e0e0e0;
+}
+.MuiButton-raised-68.MuiButton-keyboardFocused-69 {
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),0px 6px 10px 0px rgba(0, 0, 0, 0.14),0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+.MuiButton-raised-68:active {
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),0px 8px 10px 1px rgba(0, 0, 0, 0.14),0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+.MuiButton-raised-68.MuiButton-disabled-73 {
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.MuiButton-raised-68:hover {
+  background-color: #d5d5d5;
+}
+@media (hover: none) {
+  .MuiButton-raised-68:hover {
+    background-color: #e0e0e0;
+  }
+}
+.MuiButton-raised-68:hover.MuiButton-disabled-73 {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+@media (hover: none) {
+  .MuiButton-raised-68:hover.MuiButton-disabled-73 {
+    background-color: #e0e0e0;
+  }
+}
+.MuiButton-raisedPrimary-70 {
+  color: rgba(255, 255, 255, 1);
+  background-color: #3f51b5;
+}
+.MuiButton-raisedPrimary-70:hover {
+  background-color: #303f9f;
+}
+@media (hover: none) {
+  .MuiButton-raisedPrimary-70:hover {
+    background-color: #3f51b5;
+  }
+}
+.MuiButton-raisedAccent-71 {
+  color: rgba(255, 255, 255, 1);
+  background-color: #ff4081;
+}
+.MuiButton-raisedAccent-71:hover {
+  background-color: #f50057;
+}
+@media (hover: none) {
+  .MuiButton-raisedAccent-71:hover {
+    background-color: #ff4081;
+  }
+}
+.MuiButton-raisedContrast-72 {
+  color: rgba(255, 255, 255, 1);
+}
+.MuiButton-disabled-73 {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiButton-fab-74 {
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  min-width: 0;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),0px 6px 10px 0px rgba(0, 0, 0, 0.14),0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+}
+.MuiButton-fab-74:active {
+  box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2),0px 12px 17px 2px rgba(0, 0, 0, 0.14),0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+}
+</style><style type="text/css" data-jss="" data-meta="MuiInput">
+.MuiInput-root-88 {
+  color: rgba(0, 0, 0, 0.87);
+  display: inline-block;
+  position: relative;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  padding-bottom: 2px;
+}
+label + .MuiInput-formControl-89 {
+  margin-top: 16px;
+}
+.MuiInput-inkbar-90:after {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  content: "";
+  position: absolute;
+  transform: scaleX(0);
+  transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  background-color: #304ffe;
+}
+.MuiInput-inkbar-90.MuiInput-focused-95:after {
+  transform: scaleX(1);
+}
+.MuiInput-error-91:after {
+  transform: scaleX(1);
+  background-color: #ff1744;
+}
+.MuiInput-input-92 {
+  font: inherit;
+  color: currentColor;
+  width: 100%;
+  border: 0;
+  margin: 0;
+  padding: 7px 0;
+  display: block;
+  box-sizing: content-box;
+  background: none;
+  vertical-align: middle;
+}
+.MuiInput-input-92::-webkit-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInput-input-92::-moz-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInput-input-92:-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInput-input-92::-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInput-input-92:focus {
+  outline: 0;
+}
+.MuiInput-input-92:invalid {
+  box-shadow: none;
+}
+.MuiInput-input-92::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+label[data-shrink=false] + .MuiInput-formControl-89 .MuiInput-input-92::-webkit-input-placeholder {
+  opacity: 0;
+}
+label[data-shrink=false] + .MuiInput-formControl-89 .MuiInput-input-92::-moz-placeholder {
+  opacity: 0;
+}
+label[data-shrink=false] + .MuiInput-formControl-89 .MuiInput-input-92:-ms-input-placeholder {
+  opacity: 0;
+}
+label[data-shrink=false] + .MuiInput-formControl-89 .MuiInput-input-92::-ms-input-placeholder {
+  opacity: 0;
+}
+label[data-shrink=false] + .MuiInput-formControl-89 .MuiInput-input-92:focus::-webkit-input-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInput-formControl-89 .MuiInput-input-92:focus::-moz-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInput-formControl-89 .MuiInput-input-92:focus:-ms-input-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInput-formControl-89 .MuiInput-input-92:focus::-ms-input-placeholder {
+  opacity: 0.42;
+}
+.MuiInput-inputDense-93 {
+  padding-top: 4px;
+}
+.MuiInput-disabled-94 {
+  color: rgba(0, 0, 0, 0.38);
+}
+.MuiInput-underline-96:before {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  content: "";
+  position: absolute;
+  transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: rgba(0, 0, 0, 0.42);
+}
+.MuiInput-underline-96:hover:not(.MuiInput-disabled-94):before {
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.87);
+}
+.MuiInput-underline-96.MuiInput-disabled-94:before {
+  background: transparent;
+  background-size: 5px 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.42) 33%, transparent 0%);
+  background-repeat: repeat-x;
+  background-position: left top;
+}
+.MuiInput-multiline-97 {
+  padding: 6px 0 7px;
+}
+.MuiInput-inputDisabled-98 {
+  opacity: 1;
+}
+.MuiInput-inputSingleline-99 {
+  height: 1em;
+}
+.MuiInput-inputSearch-100 {
+  -webkit-appearance: textfield;
+}
+.MuiInput-inputMultiline-101 {
+  resize: none;
+  padding: 0;
+}
+.MuiInput-fullWidth-102 {
+  width: 100%;
+}
+</style><style type="text/css" data-jss="" data-meta="MuiFormControl">
+.MuiFormControl-root-84 {
+  margin: 0;
+  border: 0;
+  display: inline-flex;
+  padding: 0;
+  position: relative;
+  min-width: 0;
+  flex-direction: column;
+}
+.MuiFormControl-marginNormal-85 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.MuiFormControl-marginDense-86 {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+.MuiFormControl-fullWidth-87 {
+  width: 100%;
+}
+</style></head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"><div><div><header class="MuiPaper-root-8 MuiPaper-shadow4-14 MuiAppBar-root-1 MuiAppBar-positionStatic-4 MuiAppBar-colorPrimary-6"><div class="MuiToolbar-root-35 MuiToolbar-gutters-36"><h1 class="MuiTypography-root-37 MuiTypography-headline-42 MuiTypography-colorInherit-56"> Givv </h1></div></header></div><div class="MuiPaper-root-8 MuiPaper-shadow2-12 MuiPaper-rounded-9" style="margin: 25px; padding: 20px; height: 500px;"><button tabindex="0" class="MuiButtonBase-root-75 MuiButton-root-61 MuiButton-raised-68 MuiButton-raisedAccent-71" type="button" role="button"><span class="MuiButton-label-63">Kyle, push this button</span><span class="MuiTouchRipple-root-77"></span></button><div class="MuiFormControl-root-84"><div class="MuiInput-root-88 MuiInput-formControl-89 MuiInput-inkbar-90 MuiInput-underline-96"><input type="text" class="MuiInput-input-92 MuiInput-inputSingleline-99"></div></div><ul><li>USU</li><li>BYU</li><li>UofU</li><li>WSU</li><li>UVU</li><li>SUU</li><li>DSU</li><li>SLCC</li><li>Snow</li><li>USU-Eastern</li></ul></div><form><label>Pick the project you would like to donate to:<select><option value="Project 1">Project 1: Save the planet </option><option value="Project 2">Project 2: Save the trees</option><option value="Project 3">Project 3: Go sleep</option></select></label><input type="submit" value="Submit"></form></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script type="text/javascript" src="./React App_files/bundle.js"></script>
+
+</body></html>

@@ -1,0 +1,111 @@
+.navbar-inverse
+{
+  background-color: #21618C;
+
+}
+.navbar-nav
+{
+  background-color: #21618C;
+}
+
+
+#home
+{
+  background-color: #CACFD2;
+}
+
+#name 
+{
+    color: royalblue;
+    margin: 20px;
+    font-weight: bold;
+    font-family: "Lucida Console", Monaco, monospace;
+
+}
+
+
+#person
+{
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+#personal
+{
+  font-size: 15px;
+}
+
+#web
+{
+  font-size: 20px;
+}
+
+
+.resume
+{
+
+  background-image: url("marriott.jpg");
+  background-size:cover;
+}
+div.box {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); 
+}
+
+#resume1
+{
+  font-size:30px;
+  font-style: italic;
+  font-weight: bold;
+  color:black;
+}
+
+.info
+{
+  padding-left: 10px;
+}
+
+.title
+{
+  font-weight: bold;
+  font-size: 15px;
+
+}
+
+.text-center.personalint
+{
+  color:black !important;
+  font-size:30px;
+  font-style: italic;
+  font-weight: bold;
+  
+}
+
+
+#contactinfo
+{
+  color: white;
+  font-weight: bold;
+}
+
+#aboutbox
+{
+  margin:auto;
+  padding: :auto;
+  border-width: 2px;
+  border-color: black;
+  border:solid;
+}
+div.box p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+.navbar-brand{
+color:#fdfdfd !important;
+}
+
